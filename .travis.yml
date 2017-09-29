@@ -1,23 +1,20 @@
 dist: trusty
 sudo: required
-
 language: php
 php:
-  - 7.1
-
+- 7.1
 before_script:
-  - composer self-update
-  - composer install
-
+- composer self-update
+- composer install
 addons:
   sonarcloud:
-    organization: "didatus-github"
+    organization: didatus-github
     token:
-      secure: "da1c502c4bbf3c0273dacb0d64a08a46d1953130"
+      secure: rdyzJVjy6+U2Q9QD4l5qklwB4xZ7luf1QUrKwutYYaW2009nj0eTi77+t+ggJLp799TZHF5GHg+nQYXTDZG0YTSzVfgeczXiif44H+tYULmspNS504okHq22Ldeillqz6LAfbbST818j2f1HqNuFDtkfGo7PObfswUyCV2vmhvWKZ+eyanhnFJHqL4/BrMbM0xWLsCY/E1yWdW3Ik16eBVI7v3cYE20rNmHLMBMdTAT3O3je/JLSalxN5YrqvxT4ozIQkVoyb/00My1pw9uScVi20d51kA2TjBDO71XdYT2NVpZsHEP/5BW88vAf3UhaPsFmwqWrE4zc93r7uyC439CgJ9rdErakVHDzHyXw+1lykJgqtpKRXIwNvWRLzHUN94gg0tl053010Fho1BQIlKM+rnJyOSRICJjxRXassTh8b3yKw0sFYlpXEpxoR+E80S2tPaH3ANjpRzXGXg+ULwCbC4FYggYck8dmruYhbcxHCCeUxLzdsKQE+PeUo6zKZXBVb2e9uFCztR+HDNSDWkCnqEVk0VvbZrmnOnt/zPUJrgI4pkvo1+VSEsjLGOyAXoR47iSYqQJDBuSa03oVFOk1cK21duNx1cwwd3k6cPxthwrWtopDwO7fyXYWwQyKzoSdT4xJevzi8gJFS9sISF3ozF6XELZ2qAtKNPo8QzY=
 jdk:
-  - oraclejdk8
+- oraclejdk8
 script:
-  - sonar-scanner
+- sonar-scanner
 cache:
   directories:
-    - '$HOME/.sonar/cache'
+  - "$HOME/.sonar/cache"
