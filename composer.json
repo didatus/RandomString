@@ -1,0 +1,29 @@
+{
+    "name": "didatus/random-string",
+    "description": "Class for generating random strings with defined parameters",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christian Hammer",
+            "email": "me@c8h5.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Didatus\\RandomString\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ]
+    }
+}
+
