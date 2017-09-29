@@ -1,8 +1,23 @@
-language: php
+dist: trusty
+sudo: required
 
+language: php
 php:
   - 7.1
 
 before_script:
   - composer self-update
   - composer install
+
+addons:
+  sonarcloud:
+    organization: "didatus-github"
+    token:
+      secure: "da1c502c4bbf3c0273dacb0d64a08a46d1953130"
+jdk:
+  - oraclejdk8
+script:
+  - sonar-scanner
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
