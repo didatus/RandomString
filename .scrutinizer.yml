@@ -6,3 +6,4 @@ build:
                 coverage:
                     file: 'build/tests-clover.xml'
                     format: 'clover'
+
