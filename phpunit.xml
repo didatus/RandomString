@@ -12,9 +12,6 @@
     <logging>
         <log type="coverage-clover"
              target="build/tests-clover.xml"/>
-        <log type="junit"
-             target="build/tests-junit.xml"
-             logIncompleteSkipped="false"/>
     </logging>
     <filter>
         <whitelist>

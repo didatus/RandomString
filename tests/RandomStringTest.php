@@ -4,6 +4,7 @@ use Didatus\RandomString\RandomString;
 
 /**
  * @coversDefaultClass \Didatus\RandomString\RandomString
+ * @covers \Didatus\RandomString\RandomString
  */
 class RandomStringTest extends PHPUnit_Framework_TestCase {
 
