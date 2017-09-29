@@ -2,6 +2,8 @@
 A simple class for generating random strings.
 
 [![Build Status](https://travis-ci.org/didatus/RandomString.svg?branch=master)](https://travis-ci.org/didatus/RandomString)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/didatus/RandomString/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/didatus/RandomString/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/didatus/RandomString/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/didatus/RandomString/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/a97f47fc-f369-4434-b0ee-b8901931b9e2/mini.png)](https://insight.sensiolabs.com/projects/a97f47fc-f369-4434-b0ee-b8901931b9e2)
 
 #### Create RandomString Instance

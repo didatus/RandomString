@@ -16,5 +16,10 @@
              target="build/tests-junit.xml"
              logIncompleteSkipped="false"/>
     </logging>
+    <filter>
+        <whitelist>
+            <directory>tests</directory>
+        </whitelist>
+    </filter>
 </phpunit>
 

@@ -5,7 +5,7 @@ use Didatus\RandomString\RandomString;
 class RandomStringTest extends PHPUnit_Framework_TestCase {
 
     /**
-     * @covers RandomString::getString()
+     * @covers Didatus\RandomString\RandomString::getString
      */
     public function testLengthOfRandomString()
     {
@@ -15,7 +15,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers RandomString::getString()
+     * @covers Didatus\RandomString\RandomString::getString
      */
     public function testStringWithPreDefinedCharacterPool()
     {
@@ -25,7 +25,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers RandomString::getString()
+     * @covers Didatus\RandomString\RandomString::getString
      */
     public function testStringWithPreDefinedCharacterPoolAndExceptCharacters()
     {
@@ -35,7 +35,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers RandomString::getString()
+     * @covers Didatus\RandomString\RandomString::getString
      */
     public function testComplexRandomString()
     {
@@ -50,7 +50,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers RandomString::getListOfString()
+     * @covers Didatus\RandomString\RandomString::getListOfString
      */
     public function testGetTenRandomStrings()
     {
@@ -60,7 +60,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers RandomString::getListOfString()
+     * @covers Didatus\RandomString\RandomString::getListOfString
      */
     public function testGetThreeRandomStringsWithLengthOfFive()
     {
