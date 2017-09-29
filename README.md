@@ -1,6 +1,8 @@
 # RandomString
 A simple class for generating random strings.
 
+[![Latest Stable Version](https://poser.pugx.org/didatus/random-string/v/stable)](https://packagist.org/packages/didatus/random-string)
+[![License](https://poser.pugx.org/didatus/random-string/license)](https://packagist.org/packages/didatus/random-string)
 [![Build Status](https://travis-ci.org/didatus/RandomString.svg?branch=master)](https://travis-ci.org/didatus/RandomString)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/didatus/RandomString/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/didatus/RandomString/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/didatus/RandomString/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/didatus/RandomString/?branch=master)

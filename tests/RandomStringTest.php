@@ -2,10 +2,13 @@
 
 use Didatus\RandomString\RandomString;
 
+/**
+ * @coversDefaultClass \Didatus\RandomString\RandomString
+ */
 class RandomStringTest extends PHPUnit_Framework_TestCase {
 
     /**
-     * @covers Didatus\RandomString\RandomString::getString
+     * @covers ::getString
      */
     public function testLengthOfRandomString()
     {
@@ -15,7 +18,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers Didatus\RandomString\RandomString::getString
+     * @covers ::getString
      */
     public function testStringWithPreDefinedCharacterPool()
     {
@@ -25,7 +28,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers Didatus\RandomString\RandomString::getString
+     * @covers ::getString
      */
     public function testStringWithPreDefinedCharacterPoolAndExceptCharacters()
     {
@@ -35,7 +38,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers Didatus\RandomString\RandomString::getString
+     * @covers ::getString
      */
     public function testComplexRandomString()
     {
@@ -50,7 +53,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers Didatus\RandomString\RandomString::getListOfString
+     * @covers ::getListOfString
      */
     public function testGetTenRandomStrings()
     {
@@ -60,7 +63,7 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers Didatus\RandomString\RandomString::getListOfString
+     * @covers ::getListOfString
      */
     public function testGetThreeRandomStringsWithLengthOfFive()
     {
@@ -71,4 +74,29 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
         $this->assertEquals(5, strlen($strings[2]), "The third random string should be 5 characters long!");
         unset($randomString, $strings);
     }
+
+    /**
+     * @covers ::getString
+     */
+    public function testDefaultInstanceCreatesAlphaOnlyStrings()
+    {
+        $randomString = new RandomString();
+        $string = $randomString->getString(100);
+
+        $this->assertRegExp('/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]{100}/', $string);
+    }
+
+    /**
+     * @covers ::getString
+     */
+    public function testRandomStringWithUniqueCharacters()
+    {
+        $randomString = new RandomString("ABCDEFGHIJ", "", true);
+        $string = $randomString->getString(10);
+
+        $this->assertEmpty(array_diff(str_split("ABCDEFGHIJ"), str_split($string)));
+    }
+
+
+
 }
