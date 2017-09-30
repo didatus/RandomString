@@ -98,6 +98,21 @@ class RandomStringTest extends PHPUnit_Framework_TestCase {
         $this->assertEmpty(array_diff(str_split("ABCDEFGHIJ"), str_split($string)));
     }
 
+    /**
+     * @expectedException \Didatus\RandomString\CharacterPoolTooSmallException
+     */
+    public function testCharacterPoolTooSmallThrowsException()
+    {
+        $randomString = new RandomString("ABCDEFGHIJ", "", true);
+        $randomString->getString(20);
+    }
 
-
+    /**
+     * @expectedException \Didatus\RandomString\CharacterPoolTooSmallException
+     */
+    public function testListWithCharacterPoolTooSmallThrowsException()
+    {
+        $randomString = new RandomString("ABCDEFGHIJ", "", true);
+        $randomString->getListOfString(20, 3);
+    }
 }
