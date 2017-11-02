@@ -38,3 +38,5 @@ $string = $randomString->getString(10);
 $randomString = new RandomString();
 $strings = $randomString->getListOfString(10, 5);
 ```
+
+C8H5
